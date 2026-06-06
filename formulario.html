@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <div id="mensagem" class="alert_mensagem"></div>
+
+    <header>
+        <nav>
+            <h4>Leonardo Prado • Software Developer</h4>
+            <a href="/index.html#apresentacao">Apresentação</a>
+            <p>|</p>
+            <a href="/index.html#habilidades">Habilidades</a>
+            <p>|</p>
+            <a href="/index.html#projetos">Projetos</a>
+            <p>|</p>
+            <a href="/index.html#formulario">Formulário</a>
+        </nav>
+    </header>
+
+    <main>
+        <br>
+        <section id="formulario">
+
+            <h1>Vamos nos conhecer</h1>
+
+            <p>Preencha seus dados para que possamos nos conhecer melhor. Em seguida, você receberá um e-mail meu para
+                agendarmos uma entrevista.</p>
+
+            <h2>Contato</h2>
+
+            <form id="contatoForm">
+                <p>
+                    <label for="nome">Nome *</label><br>
+                    <input type="text" id="nome" required>
+                </p>
+
+                <p>
+                    <label for="email">E-mail *</label><br>
+                    <input type="email" id="email" required>
+                </p>
+
+
+                <label for="observacao">Observação</label>
+                <textarea id="observacao" rows="6" placeholder="Digite sua mensagem aqui..."></textarea><br>
+
+
+                <div class="center">
+                    <button type="submit" class="button_formulario">
+                        Enviar Mensagem
+                    </button>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+
+    <footer>
+        © 2026 Portfólio pessoal
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

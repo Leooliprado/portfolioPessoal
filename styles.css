@@ -70,13 +70,27 @@ footer {
 
 
 a:hover {
-    background-color: #2f3238;
+    background-color: #373e4e;
     border-radius: 8px;
 }
 
 a {
     transition: 0.5s;
 }
+
+h1 {
+    text-align: center;
+}
+
+button:hover {
+    background-color: #373e4e;
+    border-radius: 8px;
+}
+
+button {
+    transition: 0.5s;
+}
+
 
 .link_paragrafo {
     text-decoration: none;
@@ -88,14 +102,25 @@ a {
     padding: 10px 16px;
     text-decoration: none;
     color: white;
-    background-color: #3b4048;
+    background-color: #4c5564;
     border: 1px solid #5a5f6a;
     border-radius: 8px;
 }
 
-h1 {
+
+.link_formulario {
+    display: inline-block;
+    padding: 10px 16px;
+    width: 30vh;
     text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #4c5564;
+    border: 1px solid #5a5f6a;
+    border-radius: 8px;
 }
+
+
 
 #apresentacao {
     display: flex;
@@ -133,4 +158,101 @@ h1 {
     background: #2f3238;
     border: 1px solid #5a5f6a;
     border-radius: 12px;
+}
+
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    background: #2f3238;
+    border: 1px solid #5a5f6a;
+    border-radius: 12px;
+}
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+
+
+
+
+#contatoForm {
+    display: grid;
+    width: 100%;
+}
+
+#formulario input {
+    width: 50%;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background-color: #1e2023;
+    border: 1px solid #5a5f6a;
+    border-radius: 8px;
+}
+
+#formulario textarea {
+    width: 50%;
+   
+    padding: 12px;
+    color: white;
+    background-color: #1e2023;
+    border: 1px solid #5a5f6a;
+    border-radius: 8px;
+    resize: none;
+}
+
+#formulario textarea::placeholder {
+    color: #b0b0b0;
+}
+
+
+.alert_mensagem {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+    padding: 16px 24px;
+    border-radius: 8px;
+
+    background-color: #22c55e;
+    color: white;
+    font-weight: bold;
+
+    z-index: 99999;
+
+    opacity: 0;
+    transition: all 0.4s ease;
+
+}
+
+.alert_mensagem.mostrar {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+
+
+
+.button_formulario {
+    display: inline-block;
+    padding: 10px 16px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    background-color: #4c5564;
+    border: 1px solid #5a5f6a;
+    border-radius: 8px;
 }
