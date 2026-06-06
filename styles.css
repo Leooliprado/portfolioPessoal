@@ -189,29 +189,32 @@ button {
     width: 100%;
 }
 
-#formulario input {
+#formulario input,
+#formulario textarea {
     width: 50%;
     padding: 12px;
-    font-size: 16px;
     color: white;
     background-color: #1e2023;
     border: 1px solid #5a5f6a;
     border-radius: 8px;
+    box-sizing: border-box;
 }
 
 #formulario textarea {
-    width: 50%;
-   
-    padding: 12px;
-    color: white;
-    background-color: #1e2023;
-    border: 1px solid #5a5f6a;
-    border-radius: 8px;
     resize: none;
 }
 
 #formulario textarea::placeholder {
     color: #b0b0b0;
+}
+
+
+@media (max-width: 768px) {
+
+    #formulario input,
+    #formulario textarea {
+        width: 100%;
+    }
 }
 
 
